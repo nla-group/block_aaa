@@ -26,5 +26,5 @@ FF = @(z) [ 1/(z+1) 1/(z^2-5) z;
 disp(['EXAMPLE 2 - best RMSE achieved: ' num2str(rmse(pts,R2,FF)) ])
 figure, semilogy(0:length(rmse2)-1,rmse2), hold on
 semilogy([0,opts.maxit-1],opts.tol*[1,1],'k--')
-xlabel('degree'), ylabel('Example 2')
+xlabel('degree'), ylabel('RMSE')
 title('block-AAA convergence (Example 2, rectangular F)')
