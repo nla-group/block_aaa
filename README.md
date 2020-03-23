@@ -1,12 +1,13 @@
 # Block-AAA
 ## A method for discrete rational least squares approximation
 
-This repository provides a MATLAB implementation of the block-AAA method,
-a block generalization of the AAA algorithm [7] to m-by-n matrix-valued 
-functions F(z) of a scalar argument. Given a function F(z) at a number 
-of sampling points in the complex plane, the block-AAA method aims 
-to compute a low-degree rational interpolant R(z) such that R(z)~F(z), 
-measured in the root mean squared error over the sampling points.
+This repository provides a MATLAB implementation of the block-AAA method
+described in [3]. This method is a block generalization of the AAA 
+algorithm [7] to m-by-n matrix-valued functions F(z) of a scalar argument. 
+Given a function F(z) at a number of sampling points in the complex plane, 
+the block-AAA method aims to compute a low-degree rational interpolant R(z) 
+such that R(z)~F(z), measured in the root mean squared error over the 
+sampling points.
 
 Block-AAA is based on a generalized barycentric formula with 
 *matrix-valued weights,* that is,
@@ -72,8 +73,9 @@ This project is licensed under the MIT License.
     and Newton representations of rational interpolants, 
     Linear Algebra and its Applications 576, pp. 246--257, 2018.
 
-[3] V. Gosea and S. Güttel: Discrete rational least squares approximation
-    of matrix-valued functions, in preparation.
+[3] I. V. Gosea and S. Güttel: Algorithms for the rational approximation 
+    of matrix-valued functions, arXiv preprint 2003.06410v1, 2020.
+    [https://arxiv.org/abs/2003.06410]
 
 [4] B. Gustavsen and A. Semlyen: Rational approximation of frequency 
     domain responses by vector fitting, IEEE Transactions on Power 
@@ -85,7 +87,8 @@ This project is licensed under the MIT License.
 
 [6] P. Lietaert, J. Pérez, B. Vandereycken, and K. Meerbergen: Automatic 
     rational approximation and linearization of nonlinear eigenvalue 
-    problems, arXiv preprint 1801.08622, 28 pages, 2018.
+    problems, arXiv preprint 1801.08622, 2018.
+    [https://arxiv.org/pdf/1801.08622.pdf]
 
 [7] Y. Nakatsukasa, O. Sète, and L. N. Trefethen: The AAA algorithm for 
     rational approximation, SIAM Journal on Scientific Computing 40(3), 
