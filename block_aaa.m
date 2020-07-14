@@ -117,6 +117,10 @@ for it = 1:opts.maxit+1
     for i = 1:npts
         err(i) = norm(Rbary(pts(i)) - FF{i},'fro').^2;
     end
+    
+    indnan = find(not(isfinite(err)));
+    err(indnan) = 0;
+    
     rmse(it) = sqrt(sum(err)/npts);
     
     if strcmp(opts.return,'best') && rmse(it) <= min(rmse)
@@ -183,7 +187,7 @@ D = zeros(size(Dk{1})); % denominator
 
 [val,ind] = min(abs(z-zk)); % evaluation at support point
 if val < 1e1*eps
-    R = Dk{ind}\Ck{ind};
+    R = (Dk{ind})\Ck{ind};
     return
 end
 
