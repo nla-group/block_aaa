@@ -74,9 +74,8 @@ This project is licensed under the MIT License.
     Linear Algebra and its Applications 576, pp. 246--257, 2018.
 
 [3] I. V. Gosea and S. Güttel: Algorithms for the rational approximation 
-    of matrix-valued functions, accepted for publication in  
-    SIAM Journal on Scientific Computing, 2021.
-    [https://arxiv.org/abs/2003.06410]
+    of matrix-valued functions, accepted for publication in SIAM Journal 
+    on Scientific Computing, 2021. [https://arxiv.org/abs/2003.06410]
 
 [4] B. Gustavsen and A. Semlyen: Rational approximation of frequency 
     domain responses by vector fitting, IEEE Transactions on Power 
